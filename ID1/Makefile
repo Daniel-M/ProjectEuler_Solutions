@@ -10,3 +10,6 @@ id1_go: id1.go
 	
 go_run: id1.go
 	go run $^
+
+python_run: id1.py
+	python3 $^
