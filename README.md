@@ -1,4 +1,4 @@
-# ProyectEuler_Solutions
+# ProjectEuler_Solutions
 My attempts to solve proyect euler problems
 
 ## Running or compiling
@@ -7,5 +7,5 @@ Each solution goes at its own path with its own `Makefile`.
 
 ## Solved problems so far
 
-* ID1  [statement](https://projecteuler.net/problem=1) [my solution](https://github.com/Daniel-M/ProyectEuler_Solutions/tree/master/ID1)  
-* ID2  [statement](https://projecteuler.net/problem=2) [my solution](https://github.com/Daniel-M/ProyectEuler_Solutions/tree/master/ID2)   
+* ID1  [here's the statement](https://projecteuler.net/problem=1), [here's my solution](https://github.com/Daniel-M/ProyectEuler_Solutions/tree/master/ID1)  
+* ID2  [here's the statement](https://projecteuler.net/problem=2), [here's my solution](https://github.com/Daniel-M/ProyectEuler_Solutions/tree/master/ID2)   
