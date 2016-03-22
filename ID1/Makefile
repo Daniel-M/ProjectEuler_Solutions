@@ -6,7 +6,7 @@ id1_cpp: id1.cpp
 	g++ $^ -o $@
 
 id1_go: id1.go
-	go -o $@ $^
+	go build -o $@ $^
 	
 go_run: id1.go
 	go run $^
