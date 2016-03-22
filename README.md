@@ -7,5 +7,6 @@ Each solution goes at its own path with its own `Makefile`.
 
 ## Solved problems so far
 
-* ID1  [here's the statement](https://projecteuler.net/problem=1), [here's my solution](https://github.com/Daniel-M/ProyectEuler_Solutions/tree/master/ID1)  
-* ID2  [here's the statement](https://projecteuler.net/problem=2), [here's my solution](https://github.com/Daniel-M/ProyectEuler_Solutions/tree/master/ID2)   
+* id1  [here's the statement](https://projecteuler.net/problem=1), [here's my solution](https://github.com/Daniel-M/ProyectEuler_Solutions/tree/master/id1)  
+* id2  [here's the statement](https://projecteuler.net/problem=2), [here's my solution](https://github.com/Daniel-M/ProyectEuler_Solutions/tree/master/id2)   
+* id3  [here's the statement](https://projecteuler.net/problem=3), [here's my solution](https://github.com/Daniel-M/ProyectEuler_Solutions/tree/master/id3)   
