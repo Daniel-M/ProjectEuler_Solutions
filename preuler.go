@@ -3,16 +3,16 @@ package main
 import(
 	"fmt"
 	"flag"
-	"github.com/Daniel-M/preuler/id1"
-    "github.com/Daniel-M/preuler/id2"
-    "github.com/Daniel-M/preuler/id3"
-    "github.com/Daniel-M/preuler/id4"
-    "github.com/Daniel-M/preuler/id5"
-    "github.com/Daniel-M/preuler/id6"
-    "github.com/Daniel-M/preuler/id7"
-    "github.com/Daniel-M/preuler/id8"
-    "github.com/Daniel-M/preuler/id9"
-//	"github.com/Daniel-M/preuler/id10"
+	"github.com/Daniel-M/ProjectEuler_Solutions/id1"
+    "github.com/Daniel-M/ProjectEuler_Solutions/id2"
+    "github.com/Daniel-M/ProjectEuler_Solutions/id3"
+    "github.com/Daniel-M/ProjectEuler_Solutions/id4"
+    "github.com/Daniel-M/ProjectEuler_Solutions/id5"
+    "github.com/Daniel-M/ProjectEuler_Solutions/id6"
+    "github.com/Daniel-M/ProjectEuler_Solutions/id7"
+    "github.com/Daniel-M/ProjectEuler_Solutions/id8"
+    "github.com/Daniel-M/ProjectEuler_Solutions/id9"
+//	"github.com/Daniel-M/ProjectEuler_Solutions/id10"
 )
 
 func main(){
