@@ -3,23 +3,12 @@ package id2
 
 import(
 	"fmt"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/fibonacci"
 )
-
-func fibonacci_n(Nth int) int{
-	var fibonacci_number  int = 1
-	var fibonacci_number_b int = 1
-	var fibonacci_seed int = 1
-
-	for i:=1; i<Nth; i++{
-		fibonacci_number_b = fibonacci_number + fibonacci_seed
-		fibonacci_seed = fibonacci_number
-		fibonacci_number = fibonacci_number_b
-	}
-	return fibonacci_number
-}
 
 //func main(){
 func Id2(){
+	fmt.Println("Solution to the problem id2")
 	var sum_tot int = 0
 	var counter int = 0
 	var iBuffer int = 0
@@ -27,7 +16,7 @@ func Id2(){
 
 	for i:=1; i < limit; i++ {
 
-		iBuffer = fibonacci_n(i)
+		iBuffer = fibonacci.FibonacciN(i)
 
 		if( iBuffer%2 == 0 && iBuffer < limit){
 			counter++;

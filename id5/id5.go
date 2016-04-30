@@ -3,26 +3,19 @@ package id5
 
 import(
 	"fmt"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/exactlydivisible"
 )
 
-func is_divisible(number_to_divide int,dividing_by int) bool{
 
-	if(number_to_divide%dividing_by == 0 && dividing_by > 1){
-		return is_divisible(number_to_divide,dividing_by-1)
-	} else if (dividing_by > 1){
-		return false
-	} else {
-		return true
-	}
-}
 
 //func main(){
 func Id5(){
+	fmt.Println("Solution to the problem id5")
 	var div bool
 	var condition int = 20
 
 	for i:=2500; div != true ;i++{
-		div = is_divisible(i,condition)
+		div = exactlydivisible.IsDivisible(i,condition)
 		if(div == true){
 			fmt.Println("I've found",i)
 		}

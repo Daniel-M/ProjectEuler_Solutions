@@ -3,43 +3,28 @@ package id3
 
 import(
 	"fmt"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/primenumbers"
 )
-
-func is_prime(number int) bool{
-
-	for i:=2; i < number; i++{
-		//fmt.Println(i,number,number%i)
-		if( (number%i == 0)  && (number != i) ){
-			//break
-			//fmt.Println(true)
-			return false
-		}
-	}
-	return true 
-}
 
 //func main(){
 func Id3(){
+	fmt.Println("Solution to the problem id3")
 
 	//var desired_number_to_factor int = 13195
 	var desired_number_to_factor int = 600851475143 
+	var prime_factors_product int = 1
 	var primes_pool []int
 	var primes_factors []int
 
 
 	// Create list of prime numbers
 	// and store them into slice primes_pool
-	//for i:=1;i<=desired_number_to_factor;i++{
-	for i:=1;i<=10000;i++{
-		if(is_prime(i)){
-			primes_pool = append(primes_pool,i)
-		}
-	}
+	primes_pool = prime_sieve.PrimeList(10000)
 
 	// Show list of available prime numbers
-	fmt.Println(primes_pool)
+	fmt.Println("A total of ", len(primes_pool),"prime numbers found")
 
-	fmt.Println("Lets see the prime factors of",desired_number_to_factor)
+	fmt.Println("Lets see the prime factors of",desired_number_to_factor,"under that set")
 
 	// Lets iterate through each element of our pool of prime numbers
 	// This is easy, check if the prime number divides exactly our desired number
@@ -55,5 +40,12 @@ func Id3(){
 		}
 	}
 
+	for j:=0;j < len(primes_factors);j++ {
+		prime_factors_product*= primes_factors[j]
+	}
+
+	fmt.Println("Set of factors found:")
 	fmt.Println(primes_factors)
+	fmt.Println("The product of them is",prime_factors_product)
+
 }

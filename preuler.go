@@ -20,16 +20,20 @@ func main(){
 	fmt.Println("Project Euler solutions in Go")
 	fmt.Println("(c) 2016 - Daniel Mejía R. (danielmejia55@gmail.com)")
 
-	commandLineArguments := flag.Int("id",0,"Id of the problem to be solved")
+	commandLineArguments := flag.Int("id",0,"Id of the projecteuler problem to be solved")
 
 	flag.Parse()
 
 	var idToSolve int = *commandLineArguments
 
 	switch idToSolve {
-	
+
 	default:
-		fmt.Println("Problem",idToSolve,"Unsolved yet!")
+		if(idToSolve < 0 ){
+			fmt.Println("Invalid problem ID",idToSolve)
+		} else {
+			fmt.Println("Problem",idToSolve,"Unsolved yet!")
+		}
 
 	case 0:
 		flag.PrintDefaults()
@@ -55,7 +59,6 @@ func main(){
 /*	case 10:
 		id10.Id10()*/
 	}
-	
 }
 
 

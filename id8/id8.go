@@ -33,6 +33,7 @@ func sl_max(slice []int) int{
 
 //func main(){
 func Id8(){
+	fmt.Println("Solution to the problem id8")
 
 	//const size = 4
 	const size = 13

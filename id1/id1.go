@@ -8,6 +8,9 @@ import(
 
 //func main(){
 func Id1(){
+
+	fmt.Println("Solution to the problem id1")
+
 	const limit=1000
 
 	var sum int
