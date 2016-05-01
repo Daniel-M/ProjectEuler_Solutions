@@ -25,13 +25,12 @@ func PrimeList(iLimit int) []int{
 
 	var iPrimes []int
 
-	iPrimes = make([]int,iLimit)
-
 	ch := make(chan int) // Create a new channel.
 	go Generate(ch)      // Launch Generate goroutine.
-	for i := 0; i < iLimit; i++ {
-		prime := <-ch
-		iPrimes[i] = prime
+	prime := 0
+	for i := 1; prime < iLimit; i++ {
+		iPrimes = append(iPrimes,prime)
+		prime = <-ch
 		ch1 := make(chan int)
 		go Filter(ch, ch1, prime)
 		ch = ch1

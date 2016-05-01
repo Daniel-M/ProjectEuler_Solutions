@@ -19,7 +19,7 @@ func Id3(){
 
 	// Create list of prime numbers
 	// and store them into slice primes_pool
-	primes_pool = prime_sieve.PrimeList(10000)
+	primes_pool = prime_sieve.PrimeList(100000)
 
 	// Show list of available prime numbers
 	fmt.Println("A total of ", len(primes_pool),"prime numbers found")
