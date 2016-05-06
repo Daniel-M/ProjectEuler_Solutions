@@ -1,12 +1,18 @@
 package id11
-
 import(
 	"fmt"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/sliceUtilities"
 )
 
-//func main(){
-func Id(){
+func Id11(){
 	fmt.Println("Solution to the problem id")
+
+	var block int = 4
+
+	var overAllMaximums []int
+
+	overAllMaximums = make([]int,0)
+
 	var array_of_numbers [20][20]int
 	array_of_numbers[0] =  [20]int{8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8}
 	array_of_numbers[1] =  [20]int{49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 0}
@@ -29,9 +35,107 @@ func Id(){
 	array_of_numbers[18] = [20]int{20, 73, 35, 29, 78, 31, 90, 01, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57, 05, 54}
 	array_of_numbers[19] = [20]int{01, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 01, 89, 19, 67, 48}
 
-	fmt.Println(array_of_numbers)
+//	fmt.Println(array_of_numbers)
+
+	fmt.Println("The array is")
 
 	for i:=0; i < len(array_of_numbers[0]);i++{
 		fmt.Println(array_of_numbers[i])
 	}
+
+	product := 1
+	maximum := 0
+
+	// First the forward backward products and store the maximum
+
+	for i:=0; i < len(array_of_numbers[0]);i++{
+		for j:=0; j <= len(array_of_numbers[0])-block;j++{
+
+			for k:=0; k < block ; k++ {
+				product *= array_of_numbers[i][j+k]
+			//	fmt.Print(array_of_numbers[i][j+k]," ")
+			}
+			//fmt.Println("=",product)
+
+			if( product > maximum ){
+				maximum = product
+			}
+
+			product = 1
+
+		}
+
+	}
+
+	overAllMaximums = append(overAllMaximums,maximum)
+	maximum = 0
+
+
+	// The up-down products and store the maximum too
+	for i:=0; i <= len(array_of_numbers[0])-block;i++{
+		for j:=0; j < len(array_of_numbers[0]);j++{
+
+			for k:=0; k < block ; k++ {
+				product *= array_of_numbers[i+k][j]
+			//	fmt.Print(array_of_numbers[i+k][j]," ")
+			}
+//			fmt.Println("=",product)
+			if( product > maximum ){
+				maximum = product
+			}
+
+			product = 1
+
+		}
+
+	}
+
+	overAllMaximums = append(overAllMaximums,maximum)
+	maximum = 0
+
+	// The right-down-diagonal products and store the maximum too
+	for i:=0; i <= len(array_of_numbers[0])-block;i++{
+		for j:=0; j <= len(array_of_numbers[0])-block;j++{
+
+			for k:=0; k < block ; k++ {
+				product *= array_of_numbers[i+k][j+k]
+			//	fmt.Print(array_of_numbers[i+k][j+k]," ")
+			}
+			//fmt.Println("=",product)
+			if( product > maximum ){
+				maximum = product
+			}
+			product = 1
+
+		}
+
+	}
+
+	overAllMaximums = append(overAllMaximums,maximum)
+	maximum = 0
+
+	// The left-down-diagonal products and store the maximum too
+	for i:=0; i <= len(array_of_numbers[0])-block;i++{
+		for j:=len(array_of_numbers[0])-1; j >= block-1;j--{
+
+			for k:=0; k < block ; k++ {
+				product *= array_of_numbers[i+k][j-k]
+			//	fmt.Print(array_of_numbers[i+k][j-k]," ")
+			}
+			//fmt.Println("=",product)
+			if( product > maximum ){
+				maximum = product
+			}
+		product = 1
+
+		}
+
+	}
+
+	overAllMaximums = append(overAllMaximums,maximum)
+	maximum = 0
+
+	fmt.Println("I've found the following maxima\n",overAllMaximums)
+
+	fmt.Println("The maximum product is",sliceUtilities.Sl_max(overAllMaximums))
 }

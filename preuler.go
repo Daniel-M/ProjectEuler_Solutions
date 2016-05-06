@@ -13,6 +13,7 @@ import(
     "github.com/Daniel-M/ProjectEuler_Solutions/id8"
     "github.com/Daniel-M/ProjectEuler_Solutions/id9"
 	"github.com/Daniel-M/ProjectEuler_Solutions/id10"
+	"github.com/Daniel-M/ProjectEuler_Solutions/id11"
 )
 
 func main(){
@@ -58,6 +59,8 @@ func main(){
 		id9.Id9()
 	case 10:
 		id10.Id10()
+	case 11:
+		id11.Id11()
 	}
 }
 

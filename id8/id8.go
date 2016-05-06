@@ -4,32 +4,10 @@ package id8
 import(
 	"fmt"
 	"strconv"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/sliceUtilities"
 )
 
-func sl_product(slice []int) int{
 
-	var product int = 1
-
-//	fmt.Println(slice)
-
-	for p:=0;p<len(slice);p++{
-		product*=slice[p]
-	}
-
-//	fmt.Println(product)
-
-	return product
-}
-
-func sl_max(slice []int) int{
-	var max int = slice[0]
-	for k:=1;k<len(slice);k++{
-		if(slice[k]>max){
-			max = slice[k]
-		}
-	}
-	return max
-}
 
 //func main(){
 func Id8(){
@@ -57,13 +35,13 @@ func Id8(){
 			buffer,_ = strconv.Atoi(number[j-1:j])
 			slBuffer = append(slBuffer,buffer)
 		}
-		buffer = sl_product(slBuffer)
+		buffer = sliceUtilities.Sl_product(slBuffer)
 		slProducts = append(slProducts,buffer)
 		mSets[buffer] = slBuffer
 		slBuffer = make([]int,0)
 	}
 
 	fmt.Println("List of products of",size,"terms\n",slProducts)
-	buffer = sl_max(slProducts)
+	buffer = sliceUtilities.Sl_max(slProducts)
 	fmt.Println("\nThe maximum value found was",buffer,"produced by the set",mSets[buffer])
 }

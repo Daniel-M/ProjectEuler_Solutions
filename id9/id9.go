@@ -1,8 +1,9 @@
-package id9 
+package id9
 
 import(
 	"fmt"
 	"math"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/sliceUtilities"
 )
 
 func is_whole(number float64) bool{
@@ -35,14 +36,6 @@ func check_sum(triad []int,desired int) (bool,[]int,int){
 	}
 }
 
-func sl_product(triad []int) int{
-	var result int = 1 
-	for i:=0;i<len(triad);i++{
-		result*=triad[i]
-	}
-
-	return result
-}
 
 func Id9(){
 	fmt.Println("Solution to the problem id9")
@@ -81,6 +74,6 @@ func Id9(){
 		i++
 	}
 
-	fmt.Println("Triad found",final_triad,"sums",sum_result," the product is",sl_product(final_triad))
+	fmt.Println("Triad found",final_triad,"sums",sum_result," the product is",sliceUtilities.Sl_product(final_triad))
 
 }
