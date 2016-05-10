@@ -1,4 +1,4 @@
-package fibonacci
+package fibonacciNumbers
 
 func FibonacciN(Nth int) int{
 	var fibonacci_number  int = 1

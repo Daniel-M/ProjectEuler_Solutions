@@ -37,7 +37,7 @@ func check_sum(triad []int,desired int) (bool,[]int,int){
 }
 
 
-func Id9(){
+func Solution(){
 	fmt.Println("Solution to the problem id9")
 
 	var number, sum_result int

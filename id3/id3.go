@@ -3,11 +3,11 @@ package id3
 
 import(
 	"fmt"
-	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/primenumbers"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/primeNumbers"
 )
 
 //func main(){
-func Id3(){
+func Solution(){
 	fmt.Println("Solution to the problem id3")
 
 	//var desired_number_to_factor int = 13195
@@ -19,7 +19,7 @@ func Id3(){
 
 	// Create list of prime numbers
 	// and store them into slice primes_pool
-	primes_pool = prime_sieve.PrimeList(100000)
+	primes_pool = primeNumbers.PrimeList(100000)
 
 	// Show list of available prime numbers
 	fmt.Println("A total of ", len(primes_pool),"prime numbers found")

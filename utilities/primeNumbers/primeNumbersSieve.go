@@ -1,6 +1,6 @@
 // A concurrent prime sieve
 // taken from https://play.golang.org/p/hgIlEQZB-2
-package prime_sieve
+package primeNumbers 
 
 // Send the sequence 2, 3, 4, ... to channel 'ch'.
 func Generate(ch chan<- int) {

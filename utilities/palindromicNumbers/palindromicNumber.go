@@ -1,4 +1,4 @@
-package palindromicnumbers
+package palindromicNumbers
 
 
 func IsPalindromic(number int) bool{

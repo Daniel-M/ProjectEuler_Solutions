@@ -2,10 +2,11 @@ package id
 
 import(
 	"fmt"
-	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/fibonacci"
-	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/primenumbers"
-	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/exactlydivisible"
-	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/palindromicnumbers"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/fibonacciNumbers"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/primeNumbers"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/exactlyDivisible"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/triangularNumbers"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/palindromicNumbers"
 	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/sliceUtilities"
 )
 

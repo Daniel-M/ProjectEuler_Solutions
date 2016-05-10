@@ -7,7 +7,7 @@ import(
 
 
 //func main(){
-func Id1(){
+func Solution(){
 
 	fmt.Println("Solution to the problem id1")
 

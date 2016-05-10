@@ -3,11 +3,11 @@ package id2
 
 import(
 	"fmt"
-	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/fibonacci"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/fibonacciNumbers"
 )
 
 //func main(){
-func Id2(){
+func Solution(){
 	fmt.Println("Solution to the problem id2")
 	var sum_tot int = 0
 	var counter int = 0
@@ -16,7 +16,7 @@ func Id2(){
 
 	for i:=1; i < limit; i++ {
 
-		iBuffer = fibonacci.FibonacciN(i)
+		iBuffer = fibonacciNumbers.FibonacciN(i)
 
 		if( iBuffer%2 == 0 && iBuffer < limit){
 			counter++;

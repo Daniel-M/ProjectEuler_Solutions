@@ -25,7 +25,7 @@ func square_of_sum(Nth int) int{
 }
 
 //func main(){
-func Id6(){
+func Solution(){
 	fmt.Println("Solution to the problem id6")
 	var iSum_of_squares int = sum_of_squares(100)
 	var iSquare_of_sum int = square_of_sum(100)

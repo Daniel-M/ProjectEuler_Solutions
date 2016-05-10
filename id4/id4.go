@@ -3,13 +3,13 @@ package id4
 
 import(
 	"fmt"
-	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/palindromicnumbers"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/palindromicNumbers"
 )
 
 
 
 //func main(){
-func Id4(){
+func Solution(){
 	fmt.Println("Solution to the problem id4")
 
 	var seed int = 999
@@ -25,7 +25,7 @@ func Id4(){
 
 			iBuffer = i*j
 
-			if( palindromicnumbers.IsPalindromic(iBuffer) && iMaxPalindrome < iBuffer){
+			if( palindromicNumbers.IsPalindromic(iBuffer) && iMaxPalindrome < iBuffer){
 				iMaxPalindrome = iBuffer
 				pair_A = i
 				pair_B = j

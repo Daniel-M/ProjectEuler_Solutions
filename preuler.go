@@ -14,6 +14,7 @@ import(
     "github.com/Daniel-M/ProjectEuler_Solutions/id9"
 	"github.com/Daniel-M/ProjectEuler_Solutions/id10"
 	"github.com/Daniel-M/ProjectEuler_Solutions/id11"
+	"github.com/Daniel-M/ProjectEuler_Solutions/id12"
 )
 
 func main(){
@@ -40,27 +41,29 @@ func main(){
 		flag.PrintDefaults()
 
 	case 1:
-		id1.Id1()
+		id1.Solution()
 	case 2:
-		id2.Id2()
+		id2.Solution()
 	case 3:
-		id3.Id3()
+		id3.Solution()
 	case 4:
-		id4.Id4()
+		id4.Solution()
 	case 5:
-		id5.Id5()
+		id5.Solution()
 	case 6:
-		id6.Id6()
+		id6.Solution()
 	case 7:
-		id7.Id7()
+		id7.Solution()
 	case 8:
-		id8.Id8()
+		id8.Solution()
 	case 9:
-		id9.Id9()
+		id9.Solution()
 	case 10:
-		id10.Id10()
+		id10.Solution()
 	case 11:
-		id11.Id11()
+		id11.Solution()
+	case 12:
+		id12.Solution()
 	}
 }
 

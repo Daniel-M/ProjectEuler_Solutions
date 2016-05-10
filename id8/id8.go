@@ -10,7 +10,7 @@ import(
 
 
 //func main(){
-func Id8(){
+func Solution(){
 	fmt.Println("Solution to the problem id8")
 
 	//const size = 4

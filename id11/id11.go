@@ -4,8 +4,8 @@ import(
 	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/sliceUtilities"
 )
 
-func Id11(){
-	fmt.Println("Solution to the problem id")
+func Solution(){
+	fmt.Println("Solution to the problem id11")
 
 	var block int = 4
 

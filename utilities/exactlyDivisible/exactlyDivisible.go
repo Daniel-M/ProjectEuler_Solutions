@@ -1,4 +1,4 @@
-package exactlydivisible
+package exactlyDivisible
 
 
 func IsDivisible(number_to_divide int,dividing_by int) bool{
@@ -10,4 +10,19 @@ func IsDivisible(number_to_divide int,dividing_by int) bool{
 	} else {
 		return true
 	}
+}
+
+func ListOfFactors(number_to_factor int) []int{
+
+	var list_of_factors []int
+
+	list_of_factors = make([]int,0)
+
+	for i:=2; i < number_to_factor; i++ {
+		if(IsDivisible(number_to_factor,i) == true){
+			list_of_factors = append(list_of_factors,i)
+		}
+	}
+
+	return list_of_factors
 }
