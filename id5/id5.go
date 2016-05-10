@@ -15,7 +15,7 @@ func Solution(){
 	var condition int = 20
 
 	for i:=2500; div != true ;i++{
-		div = exactlyDivisible.IsDivisible(i,condition)
+		div = exactlyDivisible.IsEvenlyDivisible(i,condition)
 		if(div == true){
 			fmt.Println("I've found",i)
 		}
