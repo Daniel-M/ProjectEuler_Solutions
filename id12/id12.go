@@ -10,25 +10,32 @@ import(
 //func main(){
 func Solution(){
 	fmt.Println("Solution to the problem id12")
-
+/*
 	var factores []int
 
-	factores = exactlyDivisible.ListOfFactors(28)
+	for i:=2; i < 50; i++{
 
-	fmt.Println("List of factors of 28",factores)
+		factores = exactlyDivisible.ListOfFactors(i)
 
-	factores = make([]int,0)
+		fmt.Println("List of factors of",i,factores)
 
-	// since 28 is the 7th triangular number
-	i := triangularNumbers.TriangularN(7)
+		factores = make([]int,0)
+	}
+*/
 	number_of_factors:= 1
 	k:=0
 
-	for number_of_factors < 5000{
-		i = triangularNumbers.TriangularN(i+i-triangularNumbers.TriangularN(k))
-		number_of_factors = len(exactlyDivisible.ListOfFactors(i))
-		fmt.Println(i,number_of_factors)
-		k+=10
-	}
 
+
+//	lista := exactlyDivisible.ListOfFactors(499500)
+
+  //  fmt.Println(499500,lista)
+
+
+  for i:=7;number_of_factors < 5000; i++{
+	  number := triangularNumbers.TriangularN(i)
+	  number_of_factors = len(exactlyDivisible.ListOfFactors(number))
+	  fmt.Println(i,number,number_of_factors)
+	  k+=10
+	}
 }
