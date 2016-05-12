@@ -23,19 +23,23 @@ func Solution(){
 	}
 */
 	number_of_factors:= 1
-	k:=0
+	counter:=0
 
+	number := 0 
 
+	const limit = 20000000
 
-//	lista := exactlyDivisible.ListOfFactors(499500)
+	for i:=7;(number_of_factors < 5000 && counter < limit); i++{
+		number = triangularNumbers.TriangularN(i)
+		number_of_factors = len(exactlyDivisible.ListOfFactors(number))
+		fmt.Println(i,number,number_of_factors)
+		counter++
+	}
 
-  //  fmt.Println(499500,lista)
-
-
-  for i:=7;number_of_factors < 5000; i++{
-	  number := triangularNumbers.TriangularN(i)
-	  number_of_factors = len(exactlyDivisible.ListOfFactors(number))
-	  fmt.Println(i,number,number_of_factors)
-	  k+=10
+	if(counter >= limit)	{
+		fmt.Println("I haven't found shit")
+	} else {
+		fmt.Println("I have found",number,"with",number_of_factors)
 	}
 }
+
