@@ -29,10 +29,10 @@ func Solution(){
 
 	const limit = 20000000
 
-	for i:=7;(number_of_factors < 5000 && counter < limit); i++{
+	for i:=7;(number_of_factors < 500 && counter < limit); i++{
 		number = triangularNumbers.TriangularN(i)
 		number_of_factors = len(exactlyDivisible.ListOfFactors(number))
-		fmt.Println(i,number,number_of_factors)
+//		fmt.Println(i,number,number_of_factors)
 		counter++
 	}
 
