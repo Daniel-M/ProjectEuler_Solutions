@@ -8,6 +8,7 @@ import(
 	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/triangularNumbers"
 	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/palindromicNumbers"
 	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/sliceUtilities"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/collatzConjecture"
 )
 
 //func main(){

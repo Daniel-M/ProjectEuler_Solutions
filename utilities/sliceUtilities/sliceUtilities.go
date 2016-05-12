@@ -19,3 +19,18 @@ func Sl_max(slice []int) int{
 	}
 	return max
 }
+
+// Find the maximum value of the values of a map int->int
+func Map_max(input_map map[int]int) (int,int){
+	var max int = 0
+	pair := [2]int{0,0}
+
+	for k,v := range input_map{
+		if( v > max){
+			pair[0] = k
+			pair[1] = v
+			max = v
+		}
+	}
+	return pair[0],pair[1]
+}
