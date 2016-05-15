@@ -18,7 +18,7 @@ func Solution(){
 	fmt.Println(numberStrings.GetStringFigures(1000))
 	fmt.Println(numberStrings.StrSliceToString(numberStrings.GetStringFigures(1050)))
 	fmt.Println(numberStrings.StrSliceToInt(numberStrings.GetStringFigures(1050)))
-	fmt.Println(numberStrings.SumStringNumbers("125","16"))
+	fmt.Println(numberStrings.StrDigits(5,6))
 	
 
 

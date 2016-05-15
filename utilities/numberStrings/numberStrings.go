@@ -2,6 +2,11 @@ package numberStrings
 
 import "strconv"
 
+func StrDigits(number1 int, number2 int) []string{
+	return GetStringFigures(number1 + number2)
+}
+
+
 func StrSliceToString(Number []string) string{
 	var result_str = ""
 
@@ -66,9 +71,3 @@ func GetStringFiguresString(Number string) []string{
 	return slice_figures
 }
 
-func SumStringNumbers(DOWNSNumber string,UPSNumber string) string{
-
-	DOWNS := GetStringFiguresString(DOWNSNumber)
-	UPS := GetStringFiguresString(UPSNumber)
-
-}

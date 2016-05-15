@@ -23,5 +23,5 @@ func Solution(){
 		}
 	}
 	
-	fmt.Println("Total sum of multiples of 3 or 5 is",sum,"\n")
+	fmt.Println("Total sum of multiples of 3 or 5 is",sum)
 }
