@@ -5,7 +5,7 @@
 I store my solutions of the project euler problems.     
 
 # Installing the package
-If you have go installed just run  
+If you have `go` installed just run  
 
 `go get github.com/Daniel-M/ProjectEuler_Solutions`  
 
