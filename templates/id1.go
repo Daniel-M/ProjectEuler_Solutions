@@ -9,9 +9,9 @@ import(
 	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/palindromicNumbers"
 	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/sliceUtilities"
 	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/collatzConjecture"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/numberStrings"
 )
 
-//func main(){
 func Solution(){
 	fmt.Println("Solution to the problem id")
 }
