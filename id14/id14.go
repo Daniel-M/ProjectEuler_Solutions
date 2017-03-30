@@ -1,34 +1,53 @@
+// #  [PROBLEM ID14](https://projecteuler.net/problem=14)
+//
+// The following iterative sequence is defined for the set of positive
+// integers:
+//
+// n → n/2 (n is even)
+// n → 3n + 1 (n is odd)
+//
+// Using the rule above and starting with 13, we generate the following
+// sequence:
+// 13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1
+//
+// It can be seen that this sequence (starting at 13 and finishing at 1)
+// contains 10 terms. Although it has not been proved yet (Collatz Problem),
+// it is thought that all starting numbers finish at 1.
+//
+// Which starting number, under one million, produces the longest chain?
+//
+// NOTE: Once the chain starts the terms are allowed to go above one million.
 package id14
 
-import(
+import (
 	"fmt"
-//	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/fibonacciNumbers"
-//	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/primeNumbers"
-//	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/exactlyDivisible"
-//	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/triangularNumbers"
-//	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/palindromicNumbers"
-	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/sliceUtilities"
+	//	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/fibonacciNumbers"
+	//	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/primeNumbers"
+	//	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/exactlyDivisible"
+	//	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/triangularNumbers"
+	//	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/palindromicNumbers"
 	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/collatzConjecture"
+	"github.com/Daniel-M/ProjectEuler_Solutions/utilities/sliceUtilities"
 )
 
-func Solution(){
+func Solution() {
 	fmt.Println("Solution to the problem id14")
 
 	const limit = 1000000
 
-//	var collatz_list []int
-//	collatz_list = make([]int,0)
+	//	var collatz_list []int
+	//	collatz_list = make([]int,0)
 
 	collatz_map := make(map[int]int)
 
-	for j:=2; j <= limit; j++{
+	for j := 2; j <= limit; j++ {
 		long := len(collatzConjecture.CollatzList(j))
-//		collatz_list =  append(collatz_list,long)
-		collatz_map[j]= long
-//		fmt.Println(j,long)
+		//		collatz_list =  append(collatz_list,long)
+		collatz_map[j] = long
+		//		fmt.Println(j,long)
 	}
 
-//	fmt.Println(collatz_map)
-	key,max := sliceUtilities.Map_max(collatz_map)
-	fmt.Println("The maximum length is",max,"for the number",key)
+	//	fmt.Println(collatz_map)
+	key, max := sliceUtilities.Map_max(collatz_map)
+	fmt.Println("The maximum length is", max, "for the number", key)
 }
