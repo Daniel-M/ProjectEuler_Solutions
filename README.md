@@ -1,4 +1,4 @@
-# ProjectEuler_Solutions  
+# ProjectEuler_Solutions [![Build Status](https://travis-ci.org/Daniel-M/ProjectEuler_Solutions.svg?branch=master)](https://travis-ci.org/Daniel-M/ProjectEuler_Solutions) 
 ### Daniel Mejía R ([danielmejia55@gmail.com](mailto:danielmejia55@gmail.com))  
 
 ## Description
